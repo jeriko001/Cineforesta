@@ -289,7 +289,7 @@ export default function App() {
       <style>{STYLE}</style>
       <div className="app">
         <header>
-          <span className="header-leaf">🌿</span>
+          <span className="header-leaf" onClick={()=>{setScreen("landing");setRoomCode("");}} style={{cursor:"pointer"}}>🌿</span>
           <div className="header-title">CineForesta<span>watchlist condivisa</span></div>
           <div className="share-pill" onClick={copyCode}>
             <span className="share-pill-label">Codice</span>
